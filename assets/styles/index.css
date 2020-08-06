@@ -2,3 +2,6 @@
 @import './partials/page-landing.css';
 @import './partials/page-study.css';
 @import './partials/responsive.css';
+@import './partials/header.css';
+@import './partials/page-teach.css';
+@import './partials/form.css';
