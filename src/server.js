@@ -51,7 +51,7 @@ function pageStudy (req, res) {
 }
 
 function pageTeach (req, res) {
-    return res.render("teach.html")
+    return res.render("teach.html", { subjects, weekdays })
 }
 
 // SERVIDOR
