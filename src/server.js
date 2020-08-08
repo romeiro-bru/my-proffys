@@ -41,6 +41,11 @@ const weekdays = [
     "Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"
 ]
 // FUNCIONALIDADES
+function getSubject(subjectNumber) {
+    const arrayPosition = +subjectNumber - 1
+    return subjects[arrayPosition]
+}
+
 function pageLanding(req, res) {
     return res.render("index.html")
 }
@@ -51,6 +56,16 @@ function pageStudy (req, res) {
 }
 
 function pageTeach (req, res) {
+    const data = req.query
+    // add data into proffys object
+    // if we have data, add the data
+    if (Object.keys(data).length > 0) {
+        data.subject = getSubject(data.subject)
+        // console.log(data)
+        proffys.push(data)
+        return res.redirect("/study")
+    }
+    // if doesn't then do not add and show teach page again
     return res.render("teach.html", { subjects, weekdays })
 }
 
@@ -58,6 +73,7 @@ function pageTeach (req, res) {
 const express = require('express')
 const server = express()
 const nunjucks = require('nunjucks')
+const e = require('express')
 
 // config nunjucks
 nunjucks.configure('src/views', {
