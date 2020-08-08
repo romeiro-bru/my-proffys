@@ -51,6 +51,9 @@ function pageStudy (req, res) {
 }
 
 function pageTeach (req, res) {
+    const data = req.query
+    // add data into proffys object
+    console.log(data)
     return res.render("teach.html", { subjects, weekdays })
 }
 
