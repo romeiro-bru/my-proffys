@@ -27,7 +27,7 @@
                                 <option value="" disabled="" hidden="">Selecione uma opção</option>
                                 {%for subject in subjects%}
                                     <option value="{{loop.index}}" {{ "selected" if filters.subject == loop.index }}>{{subject}}</option>
-                                    {%endfor%}
+                                {%endfor%}
                                 </select>
                             </div>
                             <div class="select-block">
