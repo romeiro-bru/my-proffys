@@ -37,7 +37,7 @@ Database.then(async (db) => {
 // todos os proffys
     const selectedProffys =  await db.all("SELECT * FROM proffys")
 
-// consultar as classses de um determinado proffy
+// consultar as classes de um determinado proffy
     const selectClassesAndProffys = await db.all(`
         SELECT classes.*, proffys.*
         FROM proffys
