@@ -3,3 +3,8 @@
 </p>
 <br>
 My Proffy | Sua plataforma de estudos online :computer:
+
+## Technologies :octocat:
+* JavaScript :sparkles:
+* Css :nail_care:
+* HTML :hammer:	
