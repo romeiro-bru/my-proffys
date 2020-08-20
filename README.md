@@ -8,3 +8,4 @@ My Proffy | Sua plataforma de estudos online :computer:
 * JavaScript :sparkles:
 * Css :nail_care:
 * HTML :hammer:	
+* SQL :zap:
