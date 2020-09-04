@@ -7,7 +7,7 @@ My Proffy | Sua plataforma de estudos online :computer:
 ## Features :deciduous_tree:
 * Professores podem se cadastrar na plataforma
   * Selecionar matérias para dar aulas
-  * Selecionar dia e horários em que estarão disponíveis
+  * Selecionar dias e horários disponíveis para as aulas
   
 * Alunos podem filtrar aulas de acordo com a matéria por dia e horário
 
